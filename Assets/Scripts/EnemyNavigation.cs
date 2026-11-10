@@ -3,13 +3,15 @@ using UnityEngine.AI;
 
 public class EnemyNavigation : MonoBehaviour
 {
-    public NavMeshAgent agent;
+    private NavMeshAgent agent;
     public Transform target;
+
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
-        InvokeRepeating("UpdateTarget", 3f, 3f);
+        InvokeRepeating("UpdateTarget", 3f, 1f);
     }
 
     // Update is called once per frame
@@ -22,4 +24,7 @@ public class EnemyNavigation : MonoBehaviour
     {
         agent.destination = target.position;
     }
+
+
 }
+
