@@ -6,7 +6,6 @@ public class EnemyNavigation : MonoBehaviour
     private NavMeshAgent agent;
     public Transform target;
 
-
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -19,12 +18,6 @@ public class EnemyNavigation : MonoBehaviour
     {
 
     }
-
-    private void UpdateTarget()
-    {
-        agent.destination = target.position;
-    }
-
 
 }
 

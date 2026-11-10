@@ -65,14 +65,4 @@ public class ReceiveDamage : MonoBehaviour
             }
         }
     }
-    public void Morir()
-    {
-        GameController controller = FindFirstObjectByType<GameController>();
-        if (controller != null)
-        {
-            controller.EnemiesLefttoKill();
-        }
-
-        Destroy(gameObject);
-    }
 }

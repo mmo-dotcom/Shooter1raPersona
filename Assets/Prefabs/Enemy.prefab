@@ -525,9 +525,8 @@ MonoBehaviour:
   enemyHealth: 100
   enemyHealthText: {fileID: 3066882485969950758}
   healthBar: {fileID: 2390944595791700043}
-  enemyDamage: 20
-  vida: 3
-  ataqueporsegundo: 1
+  health: 3
+  atkPerSec: 1
   player: {fileID: 0}
 --- !u!195 &4512395772442701172
 NavMeshAgent:
@@ -615,6 +614,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: d8f7c17a2b7a3ab44b750436c1efff3b, type: 3}
       propertyPath: m_Name
       value: Zombiegirl W Kurniawan@Zombie Idle
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: d8f7c17a2b7a3ab44b750436c1efff3b, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: be7d21f4e433e614b942d5bdfc94867a, type: 2}
+    - target: {fileID: 5866666021909216657, guid: d8f7c17a2b7a3ab44b750436c1efff3b, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
